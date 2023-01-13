@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_share/flutter_share.dart';
 
 class DisplayUser extends StatefulWidget {
   final String user;
@@ -18,6 +19,14 @@ class DisplayUser extends StatefulWidget {
 }
 
 class _DisplayUserState extends State<DisplayUser> {
+  Future<void> share() async {
+    await FlutterShare.share(
+        title: 'Example share',
+        text: 'Example share text',
+        linkUrl: 'https://flutter.dev/',
+        chooserTitle: 'Example Chooser Title');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -54,7 +63,9 @@ class _DisplayUserState extends State<DisplayUser> {
             Flexible(
               flex: 2,
               child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    share();
+                  },
                   icon: const Icon(
                     Icons.send,
                     color: Colors.blueAccent,

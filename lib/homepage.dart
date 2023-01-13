@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_internship_assignment/addNewUser.dart';
 import 'package:flutter_internship_assignment/search.dart';
 import 'package:flutter_internship_assignment/userList.dart';
-import 'package:flutter_share/flutter_share.dart';
 import 'package:intl/intl.dart';
 
 import 'displayUser.dart';
