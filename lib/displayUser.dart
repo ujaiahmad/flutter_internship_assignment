@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_share/flutter_share.dart';
+import 'package:intl/intl.dart';
 
 class DisplayUser extends StatefulWidget {
   final String user;
@@ -19,6 +20,20 @@ class DisplayUser extends StatefulWidget {
 }
 
 class _DisplayUserState extends State<DisplayUser> {
+  // DateTime timeNow = DateTime.now();
+
+  // calculateHoursAgo(time, format) {
+  //   if (format == 'dd-mm-yyyy') {
+  //     var inputFormat = DateFormat('dd-MM-yyyy hh:mm a');
+  //     var inputDate = inputFormat.parse(time);
+  //     var outputFormat = DateFormat('yyyy-MM-dd HH:mm:ss');
+  //     var outputDate = outputFormat.format(inputDate);
+  //     return timeNow.difference(DateTime.parse(outputDate)).inHours.toString();
+  //   } else {
+  //     return timeNow.difference(DateTime.parse(time)).inHours.toString();
+  //   }
+  // }
+
   Future<void> share() async {
     await FlutterShare.share(
       title: 'User Attendance',

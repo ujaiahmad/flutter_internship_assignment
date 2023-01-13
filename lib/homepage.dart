@@ -16,7 +16,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   late bool isLoad;
   final List<bool> _selectedFormat = <bool>[true, false];
-  String format1 = 'yyyy-MM-dd';
+  String format1 = 'yyyy-mm-dd';
   DateTime timeNow = DateTime.now();
 
   sortContact() {
@@ -74,6 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     isLoad = true;
     // TODO: implement initState
+    // changeDate('yyyy-MM-dd');
     sortContact(); // sort the contact before displaying
     super.initState();
   }
