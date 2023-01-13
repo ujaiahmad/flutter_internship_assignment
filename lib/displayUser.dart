@@ -21,10 +21,10 @@ class DisplayUser extends StatefulWidget {
 class _DisplayUserState extends State<DisplayUser> {
   Future<void> share() async {
     await FlutterShare.share(
-        title: 'Example share',
-        text: 'Example share text',
-        linkUrl: 'https://flutter.dev/',
-        chooserTitle: 'Example Chooser Title');
+      title: 'User Attendance',
+      text:
+          'Name: ${widget.user}\nPhone: ${widget.phone}\nCheck-in:${widget.dateTime}, ${widget.hoursAgo} hours ago',
+    );
   }
 
   @override
@@ -53,7 +53,6 @@ class _DisplayUserState extends State<DisplayUser> {
                   const SizedBox(height: 5),
                   Text(
                     '${widget.hoursAgo} hours ago',
-                    style: const TextStyle(fontSize: 12),
                   ),
                   // Text('Checked in: ${widget.hoursAgo} hours ago'),
                 ],

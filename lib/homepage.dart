@@ -167,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
           onPressed: () {
             Navigator.of(context)
                 .push(MaterialPageRoute(
-                  builder: (context) => AddUser(format: format1),
+                  builder: (context) => AddAttendanceRecord(format: format1),
                 ))
                 .then((value) => setState(() {
                       changeDate(format1);

@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_internship_assignment/userList.dart';
 import 'package:intl/intl.dart';
 
-class AddUser extends StatefulWidget {
+class AddAttendanceRecord extends StatefulWidget {
   final String format;
-  AddUser({super.key, required this.format});
+  AddAttendanceRecord({super.key, required this.format});
 
   @override
-  State<AddUser> createState() => _AddUserState();
+  State<AddAttendanceRecord> createState() => _AddAttendanceRecordState();
 }
 
-class _AddUserState extends State<AddUser> {
+class _AddAttendanceRecordState extends State<AddAttendanceRecord> {
   final userController = TextEditingController();
   final phoneController = TextEditingController();
   final dateController = TextEditingController();
