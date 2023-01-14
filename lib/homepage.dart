@@ -18,7 +18,6 @@ class _MyHomePageState extends State<MyHomePage> {
   late bool isLoad;
   late List<bool> _selectedFormat;
   String format1 = 'yyyy-mm-dd';
-  // String format1 = 'dd-mm-yyyy';
   DateTime timeNow = DateTime.now();
 
   //5. The time format changes should be keep even if users terminate/kill the app
@@ -192,6 +191,10 @@ class _MyHomePageState extends State<MyHomePage> {
                           ],
                         ),
                       ),
+                      //8. Users are able to search through the list based
+                      //on the keyword that users key in.
+                      //9. Users able to see a particular record in
+                      //another page
                       IconButton(
                           onPressed: () {
                             showSearch(
@@ -217,7 +220,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                 contactList[index]['check-in'], format1),
                           );
                         } else {
-                          //tells the user its the end of the list
+                          //10. An indicator should inform the user that
+                          //“You have reached the end of the list” when
+                          //the user scrolled to the end of the list.
                           return const Center(
                               child: Text(
                             'You have reached the end of the list',

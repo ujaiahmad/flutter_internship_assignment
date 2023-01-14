@@ -74,17 +74,14 @@ class _AddAttendanceRecordState extends State<AddAttendanceRecord> {
                                 .format(DateTime.now())
                                 .toString()
                           });
-                          // contactList.insert(
-                          //     0,
-                          //     '{user: ${userController.text.toString()}, phone: ${phoneController.text.toString()}, check-in: ${DateFormat('yyyy-MM-dd HH:mm:ss').format(DateTime.now())}}'
-                          //         as Map);
                         }
                       });
-
+                      //7. When user successfully add new record to the
+                      //list, an indicator should be display that
+                      //user had successfully completed the action
                       ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(content: Text('User Added!!')));
                       Navigator.of(context).pop();
-                      //print(contactList);
                     }
                   },
                   child: const Text('Submit'))

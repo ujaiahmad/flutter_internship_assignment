@@ -20,20 +20,9 @@ class DisplayUser extends StatefulWidget {
 }
 
 class _DisplayUserState extends State<DisplayUser> {
-  // DateTime timeNow = DateTime.now();
-
-  // calculateHoursAgo(time, format) {
-  //   if (format == 'dd-mm-yyyy') {
-  //     var inputFormat = DateFormat('dd-MM-yyyy hh:mm a');
-  //     var inputDate = inputFormat.parse(time);
-  //     var outputFormat = DateFormat('yyyy-MM-dd HH:mm:ss');
-  //     var outputDate = outputFormat.format(inputDate);
-  //     return timeNow.difference(DateTime.parse(outputDate)).inHours.toString();
-  //   } else {
-  //     return timeNow.difference(DateTime.parse(time)).inHours.toString();
-  //   }
-  // }
-
+  //12. Users are able to share the contact
+  //information from the attendance records to other
+  //applications that are installed.
   Future<void> share() async {
     await FlutterShare.share(
       title: 'User Attendance',

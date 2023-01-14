@@ -3,6 +3,10 @@ import 'package:flutter_internship_assignment/displayUser.dart';
 import 'package:flutter_internship_assignment/userList.dart';
 import 'package:intl/intl.dart';
 
+//8. Users are able to search through the list based
+//on the keyword that users key in.
+//9. Users able to see a particular record in
+//another page
 class CustomSearchDelegate extends SearchDelegate {
   DateTime timeNow = DateTime.now();
   final String format1;
