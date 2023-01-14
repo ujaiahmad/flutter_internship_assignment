@@ -66,6 +66,8 @@ class _DisplayUserState extends State<DisplayUser> {
                   const SizedBox(height: 5),
                   Text('Check in: ${widget.dateTime}, '),
                   const SizedBox(height: 5),
+                  //3. The time format should be display in the
+                  //format of “time ago” eg. 1 hour ago
                   Text(
                     '${widget.hoursAgo} hours ago',
                   ),

@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_internship_assignment/userList.dart';
 import 'package:intl/intl.dart';
 
+//6. Users able to add a new attendance record into the list
 class AddAttendanceRecord extends StatefulWidget {
   final String format;
-  AddAttendanceRecord({super.key, required this.format});
+  const AddAttendanceRecord({super.key, required this.format});
 
   @override
   State<AddAttendanceRecord> createState() => _AddAttendanceRecordState();
