@@ -59,6 +59,8 @@ class _AddAttendanceRecordState extends State<AddAttendanceRecord> {
                     if (_formKey.currentState!.validate()) {
                       setState(() {
                         if (widget.format == 'dd-mm-yyyy') {
+                          //since you did not mention to preserve the contact list,
+                          //the contact will be lost after refreshing
                           contactList.insert(0, {
                             'user': userController.text,
                             'phone': phoneController.text,

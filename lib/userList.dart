@@ -1,6 +1,8 @@
 //the dataset have to be modified because it does not follow json format
 //(I assumed json because its the typical format when fetching data)
 //i added ',' and make the datetime format into string
+//i just stored here because it does not tell to simulate fetching an api
+//so i just store it like this.
 List<dynamic> contactList = [
   {
     "user": "Chan Saw Lin",
