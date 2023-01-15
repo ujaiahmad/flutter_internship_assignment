@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_share/flutter_share.dart';
-import 'package:intl/intl.dart';
 
 class DisplayUser extends StatefulWidget {
   final String user;

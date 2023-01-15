@@ -84,12 +84,6 @@ class _MyHomePageState extends State<MyHomePage> {
   //change of toggle button
   //I used the intl library
   changeDate(format) async {
-    // setState(() {
-    //   isLoad = true;
-    // });
-
-    // _loadformat();
-
     if (format == 'dd-mm-yyyy') {
       for (int i = 0; i < contactList.length; i++) {
         var inputFormat = DateFormat('yyyy-MM-dd HH:mm:ss');
@@ -201,7 +195,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 context: context,
                                 delegate: CustomSearchDelegate(format1));
                           },
-                          icon: Icon(Icons.search))
+                          icon: const Icon(Icons.search))
                     ],
                   ),
                   const Text('Attendance List'),
